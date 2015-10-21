@@ -1,10 +1,24 @@
 // Constructors
 // Only add code to *THIS* section!
 
-///
-///
-///
-///
+var Dog = function (options) {
+  var options = options || {};
+  this.hungry = options.hungry || true;
+  this.color = options.color;
+  this.owner = options.owner;
+  this.status = options.status || 'normal';
+};
+
+var Human = function (options) {
+  var options = options || {};
+  this.cool = options.cool || false;
+  this.pet = function (dog) {
+    dog.status = 'happy';
+  };
+  this.feed = function (dog) {
+    dog.hungry = false;
+  }
+}
 
 // Do not ADD or MODIFY code below this line :)
 // Dogs
