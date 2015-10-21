@@ -7,6 +7,7 @@
 var Dog = function Dog(options) {
   var options = options || {};
   this.hungry = options.hungry || true;
+  // this.hungry = (options.hungry !== undefined) ? obj.hungry : true;
   this.color = options.color;
   this.owner = options.owner;
   this.status = options.status || 'normal';
